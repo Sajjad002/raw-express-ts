@@ -1,6 +1,6 @@
 {
-  "name": "raw-express-ts",
-  "version": "1.0.0",
+  "name": "linkpad",
+  "version": "0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "debug": "^4.3.4",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mongoose": "^7.0.5",
     "morgan": "^1.10.0",
     "tsc-watch": "^6.0.0"
   },

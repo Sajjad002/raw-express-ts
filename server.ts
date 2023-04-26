@@ -5,8 +5,12 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 import { route as indexRouter } from "./router/indexRouter";
+import { connectDB } from "./config/dbConnection";
 
 dotenv.config();
+
+// * Connect Database
+connectDB();
 
 //TODO create server
 const server: Express = express();

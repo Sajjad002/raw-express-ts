@@ -32,7 +32,10 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const morgan_1 = __importDefault(require("morgan"));
 const indexRouter_1 = require("./router/indexRouter");
+const dbConnection_1 = require("./config/dbConnection");
 dotenv_1.default.config();
+// * Connect Database
+(0, dbConnection_1.connectDB)();
 //TODO create server
 const server = (0, express_1.default)();
 // * config setting on server

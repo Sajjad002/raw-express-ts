@@ -1,6 +1,8 @@
 import express, { Router } from "express";
-import { getIndex } from "../controller/indexController";
+import { getAbout, getIndex } from "../controller/indexController";
 
 export const route: Router = express.Router();
 
+// * Set routes
 route.get("/", getIndex);
+route.get("/about", getAbout);
